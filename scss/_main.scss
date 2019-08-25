@@ -1,1 +1,24 @@
 @import 'vars';
+
+@keyframes init {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.entrance {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: absolute;
+  background-color: $darkGray;
+  animation-name: init;
+  animation-delay: 1.25s;
+  animation-duration: 1.25s;
+  animation-fill-mode: forwards;
+  .entrance__Img {
+    margin: auto;
+  }
+}
