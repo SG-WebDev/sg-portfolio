@@ -19,7 +19,7 @@
 .wrapper__Body {
   display: flex;
   flex-direction: row;
-  width: 300vw;
+  width: $sectionsAmount * 100vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
   background-color: $darkGray;

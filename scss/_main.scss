@@ -1,4 +1,4 @@
-@import 'vars';
+@import 'params';
 
 @keyframes init {
   from {
@@ -12,8 +12,7 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
-  color: #ffffff;
+@include font;
 }
 
 .entrance {
