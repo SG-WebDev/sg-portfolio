@@ -39,19 +39,8 @@
     </div>
 </div>
 <div class="entrance">
-    <img class="entrance__Img" src="./assets/logo.svg" alt="Logo">
+    <img class="entrance__Img" src="assets/img/logo.svg" alt="Logo">
 </div>
-<script>
-    const navItems = document.querySelectorAll('.nav__Item');
-    navItems.forEach( navItem => {
-        navItem.addEventListener('click', function (e) {
-            e.preventDefault();
-            let target = this.getAttribute('data-target');
-            document.querySelector(`${target}`).scrollIntoView({
-                behavior: 'smooth'
-            });
-        }, false);
-        });
-</script>
+<script src="./js/nav.js"></script>
 </body>
 </html>
