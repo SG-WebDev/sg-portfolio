@@ -1,6 +1,49 @@
 @import 'main';
 
+::-webkit-scrollbar {
+  display:none;
+}
+
+.wrapper {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.wrapper__Body {
+  display: flex;
+  flex-direction: row;
+  width: 300vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  background-color: $darkGray;
+  transition: transform 1s;
+}
+
+.wrapper__Section {
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper__Section--main {
+}
+
+.wrapper__Section--works {
+}
+
+.wrapper__Section--contact {
+
+}
+
 .entrance__Img {
   width: 25vw;
   height: auto;
 }
+
+

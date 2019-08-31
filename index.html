@@ -6,15 +6,52 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200,500,800&display=swap">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" crossorigin="anonymous">
     <link rel="stylesheet" media="screen and (min-width: 768px)" href="./css/desktop.css" />
     <link rel="stylesheet" media="screen and (max-width: 767px)" href="./css/mobile.css" />
     <title>sgrobelny.dev</title>
 </head>
 <body>
-<div class="container-fluid"></div>
+<div class="wrapper">
+    <div class="wrapper__Body">
+        <div id="MainSection" class="wrapper__Section wrapper__Section--main">
+            <h1>SECTION 1</h1>
+            <nav class="nav">
+                <a class="nav__Item" data-target="#WorksSection">Works</a>
+                <a class="nav__Item" data-target="#ContactSection">Contact</a>
+            </nav>
+        </div>
+        <div id="WorksSection" class="wrapper__Section wrapper__Section--works">
+            <h1>SECTION 2</h1>
+            <nav class="nav">
+                <a class="nav__Item" data-target="#MainSection">Main</a>
+                <a class="nav__Item" data-target="#ContactSection">Contact</a>
+            </nav>
+        </div>
+        <div id="ContactSection" class="wrapper__Section wrapper__Section--contact">
+            <h1>SECTION 3</h1>
+            <nav class="nav">
+                <a class="nav__Item" data-target="#MainSection">Main</a>
+                <a class="nav__Item" data-target="#WorksSection">Works</a>
+            </nav>
+        </div>
+    </div>
+</div>
 <div class="entrance">
     <img class="entrance__Img" src="./assets/logo.svg" alt="Logo">
 </div>
+<script>
+    const navItems = document.querySelectorAll('.nav__Item');
+    navItems.forEach( navItem => {
+        navItem.addEventListener('click', function (e) {
+            e.preventDefault();
+            let target = this.getAttribute('data-target');
+            document.querySelector(`${target}`).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }, false);
+        });
+</script>
 </body>
 </html>

@@ -3,11 +3,19 @@
 @keyframes init {
   from {
     opacity: 1;
+    visibility: visible;
   }
   to {
     opacity: 0;
+    visibility: hidden;
   }
 }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #ffffff;
+}
+
 .entrance {
   width: 100vw;
   height: 100vh;
