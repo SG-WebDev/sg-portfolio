@@ -17,27 +17,20 @@
     <div class="wrapper__Body">
         <div id="MainSection" class="wrapper__Section wrapper__Section--main">
             <h1>SECTION 1</h1>
-            <nav class="nav">
-                <a class="nav__Item" data-target="#WorksSection">Works</a>
-                <a class="nav__Item" data-target="#ContactSection">Contact</a>
-            </nav>
         </div>
         <div id="WorksSection" class="wrapper__Section wrapper__Section--works">
             <h1>SECTION 2</h1>
-            <nav class="nav">
-                <a class="nav__Item" data-target="#MainSection">Main</a>
-                <a class="nav__Item" data-target="#ContactSection">Contact</a>
-            </nav>
         </div>
         <div id="ContactSection" class="wrapper__Section wrapper__Section--contact">
             <h1>SECTION 3</h1>
-            <nav class="nav">
-                <a class="nav__Item" data-target="#MainSection">Main</a>
-                <a class="nav__Item" data-target="#WorksSection">Works</a>
-            </nav>
         </div>
     </div>
 </div>
+<nav class="nav">
+    <button class="nav__Item nav__Item--main" data-target="#MainSection">Main</button>
+    <button class="nav__Item nav__Item--works" data-target="#WorksSection">Works</button>
+    <button class="nav__Item nav__Item--contact" data-target="#ContactSection">Contact</button>
+</nav>
 <div class="entrance">
     <img class="entrance__Img" src="assets/img/logo.svg" alt="Logo">
 </div>

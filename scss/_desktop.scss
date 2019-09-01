@@ -14,31 +14,62 @@
   position: absolute;
   scrollbar-width: none;
   -ms-overflow-style: none;
+
+  .wrapper__Body {
+    display: flex;
+    flex-direction: row;
+    width: $sectionsAmount * 100vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    background-color: $darkGray;
+    transition: transform 1s;
+
+    .wrapper__Section {
+      width: 100vw;
+      height: 100vh;
+
+      &--main {
+        background-color: $gray;
+      }
+
+      &--works {
+        background-color: $darkGray;
+      }
+
+      &--contact {
+        background-color: $lightGray;
+      }
+    }
+  }
 }
 
-.wrapper__Body {
+.nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
-  flex-direction: row;
-  width: $sectionsAmount * 100vw;
-  transform: rotate(90deg) translateY(-100vh);
-  transform-origin: top left;
-  background-color: $darkGray;
-  transition: transform 1s;
-}
-
-.wrapper__Section {
-  width: 100vw;
-  height: 100vh;
-}
-
-.wrapper__Section--main {
-}
-
-.wrapper__Section--works {
-}
-
-.wrapper__Section--contact {
-
+  justify-content: space-around;
+  align-items: center;
+  .nav__Item {
+    font-size: 64px;
+    font-weight: 800;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    padding: 15px 25px;
+    transition: color 0.25s ease;
+    &--active {
+      color: $gold;
+    }
+    &:hover {
+      color: $gold;
+    }
+    &:focus {
+      outline: 0;
+      color: $gold;
+    }
+  }
 }
 
 .entrance__Img {
