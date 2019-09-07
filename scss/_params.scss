@@ -5,12 +5,13 @@ $darkGold: #997625;
 $darkGray: #333333;
 $gray: #555555;
 $lightGray: #777777;
+$white : #ffffff;
 
 //config
 $sectionsAmount: 3;
 $fontFamily: 'Raleway', sans-serif;
 $fontSize: 14px;
-$fontColor: #ffffff;
+$fontColor: $white;
 
 //mixins
 @mixin font {

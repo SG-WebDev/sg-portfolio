@@ -21,24 +21,12 @@
     width: $sectionsAmount * 100vw;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
-    background-color: $darkGray;
+    background-color: $gray;
     transition: transform 1s;
 
     .wrapper__Section {
       width: 100vw;
       height: 100vh;
-
-      &--main {
-        background-color: $gray;
-      }
-
-      &--works {
-        background-color: $darkGray;
-      }
-
-      &--contact {
-        background-color: $lightGray;
-      }
     }
   }
 }
@@ -51,20 +39,42 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+
   .nav__Item {
     font-size: 64px;
     font-weight: 800;
-    color: #ffffff;
+    color: $white;
     background-color: transparent;
+    padding: 0 25px;
+    position: relative;
     border: none;
-    padding: 15px 25px;
-    transition: color 0.25s ease;
+    transition: color 0.5s ease;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: $darkGray;
+      height: 100%;
+      width: 100%;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.5s ease;
+      z-index: -1;
+    }
+
     &--active {
       color: $gold;
     }
+
     &:hover {
       color: $gold;
+      &::before {
+        transform: scaleX(1);
+      }
     }
+
     &:focus {
       outline: 0;
       color: $gold;
