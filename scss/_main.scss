@@ -15,6 +15,30 @@ body {
 @include font;
 }
 
+.wrapper {
+  .wrapper__Body {
+    background-color: $gray;
+    .wrapper__Section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.desc {
+  .desc__Heading {
+    font-size: 28px;
+    font-weight: 500;
+  }
+  .desc__Content {
+    text-align: justify;
+  }
+  .desc__Footer {
+    font-weight: 800;
+  }
+}
+
 .entrance {
   width: 100vw;
   height: 100vh;
