@@ -40,35 +40,38 @@
     font-weight: 800;
     color: $white;
     background-color: transparent;
-    padding: 0 25px;
+    padding: 0 35px;
     position: relative;
     border: none;
-    transition: color 0.5s ease;
-    &::before {
+    transition: color 0.5s ease-in-out;
+    &::after {
       content: '';
       position: absolute;
       top: 0;
       right: 0;
-      background-color: $darkGray;
+      background-color: $lightGold;
       height: 100%;
       width: 100%;
-      transform: scaleX(0);
-      transform-origin: right;
-      transition: transform 0.5s ease;
+      transform: scaleY(0);
+      transform-origin: top;
+      transition: transform 0.5s ease-in-out;
       z-index: -1;
     }
     &--active {
       color: $gold;
     }
-    &:hover {
-      color: $gold;
-      &::before {
-        transform: scaleX(1);
-      }
-    }
     &:focus {
       outline: 0;
       color: $gold;
+    }
+    &:hover {
+      color: $darkGray;
+      &::before {
+        transform: scaleX(1);
+      }
+      &::after {
+        transform: scaleY(1);
+      }
     }
   }
 }
