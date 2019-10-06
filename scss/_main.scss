@@ -15,6 +15,48 @@ body {
 @include font;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 0;
+  z-index: 1;
+  .header__Content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .header__Logo {
+    display: flex;
+    align-items: flex-end;
+    .header__Img {
+      max-width: 100%;
+      height: auto;
+      width: 100px;
+    }
+    .header__LogoText {
+      font-size: 32px;
+      font-weight: 100;
+      color: $white;
+      line-height: 1;
+      padding: 0 25px;
+    }
+  }
+  .header__Langs {
+    .header__Lang {
+      &:hover {
+        color: $gold;
+        cursor: pointer;
+      }
+
+    }
+    .header__LangSeparator {
+
+    }
+  }
+}
+
 .wrapper {
   .wrapper__Body {
     background-color: $darkGray;
@@ -29,13 +71,14 @@ body {
 .desc {
   .desc__Heading {
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 400;
   }
   .desc__Content {
     text-align: justify;
   }
   .desc__Footer {
-    font-weight: 800;
+    font-weight: 700;
+    padding: 5px 0;
   }
 }
 
@@ -49,6 +92,7 @@ body {
   animation-delay: 1.25s;
   animation-duration: 0.75s;
   animation-fill-mode: forwards;
+  z-index: 3;
   .entrance__Img {
     margin: auto;
   }

@@ -8,31 +8,50 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-reboot.min.css">
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200,500,800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,400,700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
     <link rel="stylesheet" media="screen and (min-width: 768px)" href="./css/desktop.css"/>
     <link rel="stylesheet" media="screen and (max-width: 767px)" href="./css/mobile.css"/>
     <title>Szymon Grobelny</title>
 </head>
 <body>
+<header class="header">
+    <div class="container">
+        <div class="header__Content">
+            <div class="header__Logo">
+                <img class="header__Img" src="./assets/img/logo.svg" alt="LOGO">
+                <div class="header__LogoText">Szymon Grobelny</div>
+            </div>
+            <div class="header__Langs">
+                <span class="header__Lang" data-lang="pl">PL</span>
+                <span class="header__LangSeparator">|</span>
+                <span class="header__Lang" data-lang="en">EN</span>
+            </div>
+        </div>
+    </div>
+</header>
 <div class="wrapper">
     <div class="wrapper__Body">
         <section id="MainSection" class="wrapper__Section wrapper__Section--main">
-                <div class="col-12 col-md-10 col-xl-8">
-                    <div class="desc">
-                        <h1 class="desc__Header">O mnie</h1>
-                        <div class="desc__Content">
-                            Jestem programistą dbającym o front-end'ową warstwę witryn, serwisów internetowych i aplikacji
-                            moblinych.
-                            Od 4 lat poszerzam znajomość front-end'owych technologii webowych. Mam za sobą komercyjne
-                            doświadczenie w tworzeniu hybrydowych aplikacji mobilnych, refaktoryzacji elementów UI i w
-                            tworzeniu/rozwoju/opiece layout'ów serwisów internetowych.
-                        </div>
-                        <div class="desc__Footer">
-                            Zapraszam do współpracy!
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-xl-10 mx-auto ">
+                        <div class="desc">
+                            <h1 class="desc__Heading">O mnie</h1>
+                            <div class="desc__Content">
+                                Jestem programistą dbającym o front-end'ową warstwę witryn, serwisów internetowych i aplikacji
+                                moblinych.
+                                Od 4 lat poszerzam znajomość front-end'owych technologii webowych. Mam za sobą komercyjne
+                                doświadczenie w tworzeniu hybrydowych aplikacji mobilnych, refaktoryzacji elementów UI i w
+                                tworzeniu/rozwoju/opiece layout'ów serwisów internetowych.
+                            </div>
+                            <div class="desc__Footer">
+                                Zapraszam do współpracy!
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
         <section id="WorksSection" class="wrapper__Section wrapper__Section--works">
             <h1>SECTION 2</h1>
@@ -43,12 +62,12 @@
     </div>
 </div>
 <nav class="nav">
-    <button class="nav__Item nav__Item--main nav__Item--active" data-target="#MainSection">Main</button>
-    <button class="nav__Item nav__Item--works" data-target="#WorksSection">Works</button>
-    <button class="nav__Item nav__Item--contact" data-target="#ContactSection">Contact</button>
+    <button class="nav__Item nav__Item--main nav__Item--active" data-target="#MainSection"><span class="nav__ItemText">O mnie</span></button>
+    <button class="nav__Item nav__Item--works" data-target="#WorksSection"><span class="nav__ItemText">Prace</span></button>
+    <button class="nav__Item nav__Item--contact" data-target="#ContactSection"><span class="nav__ItemText">Kontakt</span></button>
 </nav>
 <div class="entrance">
-    <img class="entrance__Img" src="assets/img/logo.svg" alt="Logo">
+    <img class="entrance__Img" src="assets/img/logo.svg" alt="LOGO">
 </div>
 <script src="./js/nav.js"></script>
 </body>
