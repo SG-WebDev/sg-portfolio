@@ -23,9 +23,9 @@
                 <div class="header__LogoText">Szymon Grobelny</div>
             </div>
             <div class="header__Langs">
-                <span class="header__Lang" data-lang="pl">PL</span>
-                <span class="header__LangSeparator">|</span>
-                <span class="header__Lang" data-lang="en">EN</span>
+                <div class="header__Lang header__Lang--active" data-lang="pl">PL</div>
+                <div class="header__LangSeparator">|</div>
+                <div class="header__Lang" data-lang="en">EN</div>
             </div>
         </div>
     </div>
@@ -62,7 +62,7 @@
     </div>
 </div>
 <nav class="nav">
-    <button class="nav__Item nav__Item--main nav__Item--active" data-target="#MainSection"><span class="nav__ItemText">O mnie</span></button>
+    <button class="nav__Item nav__Item--about nav__Item--active" data-target="#MainSection"><span class="nav__ItemText">O mnie</span></button>
     <button class="nav__Item nav__Item--works" data-target="#WorksSection"><span class="nav__ItemText">Prace</span></button>
     <button class="nav__Item nav__Item--contact" data-target="#ContactSection"><span class="nav__ItemText">Kontakt</span></button>
 </nav>
@@ -70,5 +70,6 @@
     <img class="entrance__Img" src="assets/img/logo.svg" alt="LOGO">
 </div>
 <script src="./js/nav.js"></script>
+<script src="./js/lang.js"></script>
 </body>
 </html>

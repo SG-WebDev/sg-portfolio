@@ -44,15 +44,17 @@ body {
     }
   }
   .header__Langs {
+    display: flex;
     .header__Lang {
+      font-weight: 700;
+      padding: 0 5px;
       &:hover {
-        color: $gold;
+        color: $lightGold;
         cursor: pointer;
       }
-
-    }
-    .header__LangSeparator {
-
+      &--active {
+        color: $gold;
+      }
     }
   }
 }
