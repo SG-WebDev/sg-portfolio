@@ -14,17 +14,17 @@
   position: absolute;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  .wrapper__Body {
+  &__Body {
     display: flex;
     flex-direction: row;
     width: $sectionsAmount * 100vw;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
     transition: transform 1s;
-    .wrapper__Section {
-      width: 100vw;
-      height: 100vh;
-    }
+  }
+  &__Section {
+    width: 100vw;
+    height: 100vh;
   }
 }
 .nav {
@@ -36,7 +36,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  .nav__Item {
+  &__Item {
     font-size: 64px;
     font-weight: 700;
     color: $white;
@@ -44,35 +44,7 @@
     padding: 0 35px;
     position: relative;
     border: none;
-    transition: color 0.5s ease-in-out, transform 0.25s ease-in-out;
-    .nav__ItemText {
-      &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        border-top: 5px solid $gold;
-        height: 100%;
-        width: 100%;
-        transform: scaleX(0.25);
-        transform-origin: right;
-        transition: transform 0.25s ease-in-out;
-        z-index: -1;
-      }
-      &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        border-right: 5px solid $gold;
-        height: 100%;
-        width: 100%;
-        transform: scaleY(0.5);
-        transform-origin: top;
-        transition: transform 0.25s ease-in-out;
-        z-index: -1;
-      }
-    }
+    transition: color 0.25s ease-in-out, transform 0.25s ease-in-out;
     &::before {
       content: '';
       position: absolute;
@@ -123,11 +95,40 @@
       }
     }
   }
+  &__ItemText {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-top: 5px solid $gold;
+      height: 100%;
+      width: 100%;
+      transform: scaleX(0.25);
+      transform-origin: right;
+      transition: transform 0.25s ease-in-out;
+      z-index: -1;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-right: 5px solid $gold;
+      height: 100%;
+      width: 100%;
+      transform: scaleY(0.5);
+      transform-origin: top;
+      transition: transform 0.25s ease-in-out;
+      z-index: -1;
+    }
+  }
 }
-
-.entrance__Img {
-  width: 25vw;
-  height: auto;
+.entrance {
+  &__Img {
+    width: 25vw;
+    height: auto;
+  }
 }
 
 

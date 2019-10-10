@@ -32,14 +32,14 @@ const langData =
 
 const pl =  langData.pl;
 const en =  langData.en;
-const langItems = document.querySelectorAll('.header__Lang');
+const langItems = document.querySelectorAll('.header__LangItem');
 langItems.forEach( langItem => {
     langItem.addEventListener('click', function (e) {
         let lang = this.getAttribute('data-lang');
         langItems.forEach( elem => {
-            elem.classList.remove('header__Lang--active');
+            elem.classList.remove('header__LangItem--active');
         });
-        this.classList.add('header__Lang--active');
+        this.classList.add('header__LangItem--active');
         switch (lang) {
             case 'pl':
                 //content elements

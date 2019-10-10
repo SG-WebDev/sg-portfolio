@@ -1,6 +1,8 @@
 @import 'main';
 
-.entrance__Img {
-  width: auto;
-  height: 25vh;
-}
+.entrance {
+   &__Img {
+     width: auto;
+     height: 25vh;
+   }
+ }

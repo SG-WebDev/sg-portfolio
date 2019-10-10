@@ -22,63 +22,64 @@ body {
   right: 0;
   padding: 25px 0;
   z-index: 1;
-  .header__Content {
+  &__Content {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
   }
-  .header__Logo {
+  &__Logo {
     display: flex;
     align-items: flex-end;
-    .header__Img {
-      max-width: 100%;
-      height: auto;
-      width: 100px;
-    }
-    .header__LogoText {
-      font-size: 32px;
-      font-weight: 100;
-      color: $white;
-      line-height: 1;
-      padding: 0 25px;
-    }
   }
-  .header__Langs {
+  &__LogoText {
+    font-size: 32px;
+    font-weight: 100;
+    color: $white;
+    line-height: 1;
+    padding: 0 25px;
+  }
+  &__Img {
+    max-width: 100%;
+    height: auto;
+    width: 100px;
+  }
+  &__Lang {
     display: flex;
-    .header__Lang {
-      font-weight: 700;
-      padding: 0 5px;
-      &:hover {
-        color: $lightGold;
-        cursor: pointer;
-      }
-      &--active {
-        color: $gold;
-      }
+  }
+  &__LangItem {
+    font-weight: 700;
+    padding: 0 5px;
+    &:hover {
+      color: $lightGold;
+      cursor: pointer;
+    }
+    &--active {
+      color: $gold;
     }
   }
 }
 
 .wrapper {
-  .wrapper__Body {
+  &__Body {
     background-color: $darkGray;
-    .wrapper__Section {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+  }
+  &__Section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
 .desc {
-  .desc__Heading {
-    font-size: 28px;
-    font-weight: 400;
+  font-size: 24px;
+  &__Heading {
+    font-size: 36px;
+    font-weight: 700;
   }
-  .desc__Content {
+  &__Content {
     text-align: justify;
   }
-  .desc__Footer {
+  &__Footer {
     font-weight: 700;
     padding: 5px 0;
   }
@@ -95,7 +96,7 @@ body {
   animation-duration: 0.75s;
   animation-fill-mode: forwards;
   z-index: 3;
-  .entrance__Img {
+  &__Img {
     margin: auto;
   }
 }
