@@ -1,5 +1,17 @@
 @import 'main';
 
+.header {
+  margin-bottom: 50px;
+}
+
+.desc {
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.75;
+  margin-bottom: 50px;
+}
+
 .entrance {
    &__Img {
      width: auto;

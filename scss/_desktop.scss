@@ -4,6 +4,12 @@
   display:none;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 .wrapper {
   width: 100vh;
   height: 100vw;
@@ -26,6 +32,10 @@
     width: 100vw;
     height: 100vh;
   }
+}
+.desc {
+  text-align: justify;
+  font-size: 24px;
 }
 .nav {
   position: fixed;

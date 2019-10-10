@@ -12,14 +12,11 @@
 }
 
 body {
-@include font;
+  @include font;
+  background-color: $darkGray;
 }
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   padding: 25px 0;
   z-index: 1;
   &__Content {
@@ -71,13 +68,9 @@ body {
 }
 
 .desc {
-  font-size: 24px;
   &__Heading {
     font-size: 36px;
     font-weight: 700;
-  }
-  &__Content {
-    text-align: justify;
   }
   &__Footer {
     font-weight: 700;
