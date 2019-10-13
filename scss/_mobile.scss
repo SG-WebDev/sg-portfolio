@@ -2,6 +2,13 @@
 
 .header {
   margin-bottom: 50px;
+  &__LogoText {
+    font-size: 22px;
+    padding: 0 10px;
+  }
+}
+.wrapper {
+  margin-bottom: 75px;
 }
 
 .desc {
@@ -10,6 +17,56 @@
   letter-spacing: 1px;
   line-height: 1.75;
   margin-bottom: 50px;
+}
+
+.nav {
+  background-color: $gray;
+  justify-content: space-between;
+  box-shadow: 0px -3px 6px 0px rgba(0,0,0,0.30);
+  &__Item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 75px;
+    font-size: 16px;
+    padding: 10px 15px;
+    line-height: 1;
+    &::before {
+      font-family: "Font Awesome 5 Free";
+      -webkit-font-smoothing: antialiased;
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      font-size: 24px;
+      font-weight: 700;
+      padding: 5px 0;
+    }
+    &--about::before {
+      content: "\f05a";
+    }
+    &--works::before {
+      content: "\f5fc";
+    }
+    &--contact::before {
+      content: "\f2bb";
+    }
+    &--active {
+      background-color: $darkGray;
+      color: $lightGold;
+    }
+    &:focus {
+      outline: 0;
+      background-color: $darkGray;
+      color: $lightGold;
+    }
+  }
+  &__ItemText {
+    padding: 5px 0;
+    line-height: 1;
+  }
 }
 
 .entrance {

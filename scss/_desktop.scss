@@ -9,6 +9,10 @@
   top: 0;
   left: 0;
   right: 0;
+  &__LogoText {
+    font-size: 32px;
+    padding: 0 25px;
+  }
 }
 .wrapper {
   width: 100vh;
@@ -38,23 +42,12 @@
   font-size: 24px;
 }
 .nav {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
   padding: 25px 0;
-  display: flex;
   justify-content: space-around;
-  align-items: center;
   &__Item {
     font-size: 64px;
-    font-weight: 700;
-    color: $white;
-    background-color: transparent;
-    padding: 0 35px;
-    position: relative;
-    border: none;
     transition: color 0.25s ease-in-out, transform 0.25s ease-in-out;
+    padding: 0 35px;
     &::before {
       content: '';
       position: absolute;
