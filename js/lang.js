@@ -2,7 +2,7 @@ const langData =
     {
         "pl":
             {
-                "ver": "pl",
+                "v": "pl",
                 "nav": {
                     "about": "O mnie",
                     "works": "Prace",
@@ -10,13 +10,16 @@ const langData =
                 },
                 "desc": {
                     "heading": "O mnie",
-                    "content": "Jestem programistą dbającym o front-end'ową warstwę witryn, serwisów internetowych i aplikacji moblinych. Od 4 lat poszerzam znajomość front-end'owych technologi webowych.Mam za sobą komercyjne doświadczenie w tworzeniu hybrydowych aplikacji mobilnych, refaktoryzacji elementów UI i w tworzeniu/rozwoju/opiece layout'ów serwisów internetowych.",
+                    "content": "Jestem programistą tworzącym wygląd witryn, serwisów internetowych i aplikacji moblinych. Od 4 lat poszerzam znajomość front-end'owych technologi webowych. Mam za sobą komercyjne doświadczenie w tworzeniu hybrydowych aplikacji mobilnych, refaktoryzacji elementów UI i w tworzeniu/rozwoju/opiece layout'ów serwisów internetowych.",
                     "footer": "Zapraszam do współpracy!"
+                },
+                "portfolio": {
+                    "heading": "Przykładowe niekomercyjne prace:"
                 }
             },
         "en":
             {
-                "ver": "en",
+                "v": "en",
                 "nav": {
                     "about": "About",
                     "works": "Works",
@@ -26,6 +29,9 @@ const langData =
                     "heading": "About me",
                     "content": "I'm a Font-End developer. I am gaining experience in front-end technologies since 4 years. I have commercial experience in creating hybrid mobile applications, refactoring UI elements and in creating / developing / maintaining website layouts.",
                     "footer": "I'm looking forward to do business with you!"
+                },
+                "portfolio": {
+                    "heading": "Some of my non-commercial works:"
                 }
             }
     };
@@ -49,6 +55,7 @@ langItems.forEach( langItem => {
                 document.querySelector('.nav__Item--about .nav__ItemText').textContent = pl.nav.about;
                 document.querySelector('.nav__Item--works .nav__ItemText').textContent = pl.nav.works;
                 document.querySelector('.nav__Item--contact .nav__ItemText').textContent = pl.nav.contact;
+                document.querySelector('.portfolio__Heading').textContent = pl.portfolio.heading;
                 break;
             case 'en':
                 //content elements
@@ -58,6 +65,7 @@ langItems.forEach( langItem => {
                 document.querySelector('.nav__Item--about .nav__ItemText').textContent = en.nav.about;
                 document.querySelector('.nav__Item--works .nav__ItemText').textContent = en.nav.works;
                 document.querySelector('.nav__Item--contact .nav__ItemText').textContent = en.nav.contact;
+                document.querySelector('.portfolio__Heading').textContent = en.portfolio.heading;
                 break;
             default:
                 //content elements
