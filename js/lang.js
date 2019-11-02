@@ -10,7 +10,7 @@ const langData =
                 },
                 "desc": {
                     "heading": "O mnie",
-                    "content": "Jestem programistą tworzącym wygląd witryn, serwisów internetowych i aplikacji moblinych. Od 4 lat poszerzam znajomość front-end'owych technologi webowych. Mam za sobą komercyjne doświadczenie w tworzeniu hybrydowych aplikacji mobilnych, refaktoryzacji elementów UI i w tworzeniu/rozwoju/opiece layout'ów serwisów internetowych.",
+                    "content": "Jestem programistą tworzącym wygląd witryn, serwisów internetowych i aplikacji moblinych. Od 2015 roku poszerzam znajomość front-end'owych technologii webowych. Od 2018 roku pracuje na stanowisku Front-End Developer'a. Mam doświadczenie w tworzeniu hybrydowych aplikacji mobilnych, refaktoryzacji elementów UI i w tworzeniu/rozwoju/opiece layout'ów serwisów internetowych.",
                     "footer": "Zapraszam do współpracy!"
                 },
                 "portfolio": {
@@ -27,7 +27,7 @@ const langData =
                 },
                 "desc": {
                     "heading": "About me",
-                    "content": "I'm a Font-End developer. I am gaining experience in front-end technologies since 4 years. I have commercial experience in creating hybrid mobile applications, refactoring UI elements and in creating / developing / maintaining website layouts.",
+                    "content": "I'm a Font-End developer. I am gaining experience in front-end technologies since 2015. I've been working as a front-end developer since 2018. I've experience in creating hybrid mobile applications, refactoring UI elements and in creating / developing / maintaining website layouts.",
                     "footer": "I'm looking forward to do business with you!"
                 },
                 "portfolio": {

@@ -35,6 +35,8 @@
   &__Section {
     width: 100vw;
     height: 100vh;
+    padding-top: $headerOffset;
+    padding-bottom: $navOffset;
   }
 }
 .desc {
