@@ -9,7 +9,11 @@ const langData =
                 },
                 "desc": {
                     "heading": "O mnie",
-                    "content": "Jestem programistą tworzącym wygląd witryn, serwisów internetowych i aplikacji moblinych. Od 2015 roku poszerzam znajomość front-end'owych technologii webowych. Od 2018 roku pracuje na stanowisku Front-End Developer'a. Mam doświadczenie w tworzeniu hybrydowych aplikacji mobilnych, refaktoryzacji elementów UI i w tworzeniu/rozwoju/opiece layout'ów serwisów internetowych.",
+                    "content": {
+                        "paragraph1": "Jestem programistą tworzącym wygląd serwisów internetowych i aplikacji moblinych.",
+                        "paragraph2": "Mam doświadczenie w tworzeniu i rozwoju layout'ów serwisów internetowych, refaktoryzacji elementów UI i opiece nad stronami www. Miałem styczność z estymacją czasową zadań i projektów, a także z pracą z istniejącym już kodem wymagającym modyfikacji lub rozszerzeń.",
+                        "paragraph3": "Od 2015 roku poszerzam znajomość front-end'owych technologii webowych. Od 2018 roku pracuje na stanowisku Front-End Developer'a.",
+                    },
                     "footer": "Zapraszam do współpracy!"
                 },
             },
@@ -22,7 +26,11 @@ const langData =
                 },
                 "desc": {
                     "heading": "About me",
-                    "content": "I'm a Font-End developer. I am gaining experience in front-end technologies since 2015. I've been working as a front-end developer since 2018. I've experience in creating hybrid mobile applications, refactoring UI elements and in creating / developing / maintaining website layouts.",
+                    "content": {
+                        "paragraph1": "I'm a Font-End developer.",
+                        "paragraph2": "My expierience includes creating and developing layouts of internet applications, refactoring UI elements and maintaining websites. I had contact with the time estimation of tasks and projects, as well as working with existing code requiring fixes or extensions.",
+                        "paragraph3": "My begginings with front-end technologies started in 2015. I've been working as a front-end developer since 2018.",
+                    },
                     "footer": "I'm looking forward to do business with you!"
                 },
             }
@@ -42,7 +50,9 @@ langItems.forEach( langItem => {
             case 'pl':
                 //content elements
                 document.querySelector('.desc__Heading').textContent = pl.desc.heading;
-                document.querySelector('.desc__Content').textContent = pl.desc.content;
+                document.querySelector('.desc__Content .desc__Paragraph--1').textContent = pl.desc.content.paragraph1;
+                document.querySelector('.desc__Content .desc__Paragraph--2').textContent = pl.desc.content.paragraph2;
+                document.querySelector('.desc__Content .desc__Paragraph--3').textContent = pl.desc.content.paragraph3;
                 document.querySelector('.desc__Footer').textContent = pl.desc.footer;
                 document.querySelector('.nav__Item--about .nav__ItemText').textContent = pl.nav.about;
                 document.querySelector('.nav__Item--contact .nav__ItemText').textContent = pl.nav.contact;
@@ -50,7 +60,9 @@ langItems.forEach( langItem => {
             case 'en':
                 //content elements
                 document.querySelector('.desc__Heading').textContent = en.desc.heading;
-                document.querySelector('.desc__Content').textContent = en.desc.content;
+                document.querySelector('.desc__Content .desc__Paragraph--1').textContent = en.desc.content.paragraph1;
+                document.querySelector('.desc__Content .desc__Paragraph--2').textContent = en.desc.content.paragraph2;
+                document.querySelector('.desc__Content .desc__Paragraph--3').textContent = en.desc.content.paragraph3;
                 document.querySelector('.desc__Footer').textContent = en.desc.footer;
                 document.querySelector('.nav__Item--about .nav__ItemText').textContent = en.nav.about;
                 document.querySelector('.nav__Item--contact .nav__ItemText').textContent = en.nav.contact;
