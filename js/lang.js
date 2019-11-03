@@ -5,7 +5,6 @@ const langData =
                 "v": "pl",
                 "nav": {
                     "about": "O mnie",
-                    "works": "Prace",
                     "contact": "Kontakt"
                 },
                 "desc": {
@@ -13,16 +12,12 @@ const langData =
                     "content": "Jestem programistą tworzącym wygląd witryn, serwisów internetowych i aplikacji moblinych. Od 2015 roku poszerzam znajomość front-end'owych technologii webowych. Od 2018 roku pracuje na stanowisku Front-End Developer'a. Mam doświadczenie w tworzeniu hybrydowych aplikacji mobilnych, refaktoryzacji elementów UI i w tworzeniu/rozwoju/opiece layout'ów serwisów internetowych.",
                     "footer": "Zapraszam do współpracy!"
                 },
-                "portfolio": {
-                    "heading": "Przykładowe niekomercyjne prace:"
-                }
             },
         "en":
             {
                 "v": "en",
                 "nav": {
                     "about": "About",
-                    "works": "Works",
                     "contact": "Contact"
                 },
                 "desc": {
@@ -30,9 +25,6 @@ const langData =
                     "content": "I'm a Font-End developer. I am gaining experience in front-end technologies since 2015. I've been working as a front-end developer since 2018. I've experience in creating hybrid mobile applications, refactoring UI elements and in creating / developing / maintaining website layouts.",
                     "footer": "I'm looking forward to do business with you!"
                 },
-                "portfolio": {
-                    "heading": "Some of my non-commercial works:"
-                }
             }
     };
 
@@ -53,9 +45,7 @@ langItems.forEach( langItem => {
                 document.querySelector('.desc__Content').textContent = pl.desc.content;
                 document.querySelector('.desc__Footer').textContent = pl.desc.footer;
                 document.querySelector('.nav__Item--about .nav__ItemText').textContent = pl.nav.about;
-                document.querySelector('.nav__Item--works .nav__ItemText').textContent = pl.nav.works;
                 document.querySelector('.nav__Item--contact .nav__ItemText').textContent = pl.nav.contact;
-                document.querySelector('.portfolio__Heading').textContent = pl.portfolio.heading;
                 break;
             case 'en':
                 //content elements
@@ -63,9 +53,7 @@ langItems.forEach( langItem => {
                 document.querySelector('.desc__Content').textContent = en.desc.content;
                 document.querySelector('.desc__Footer').textContent = en.desc.footer;
                 document.querySelector('.nav__Item--about .nav__ItemText').textContent = en.nav.about;
-                document.querySelector('.nav__Item--works .nav__ItemText').textContent = en.nav.works;
                 document.querySelector('.nav__Item--contact .nav__ItemText').textContent = en.nav.contact;
-                document.querySelector('.portfolio__Heading').textContent = en.portfolio.heading;
                 break;
             default:
                 //content elements
@@ -73,7 +61,6 @@ langItems.forEach( langItem => {
                 document.querySelector('.desc__Content').textContent = pl.desc.content;
                 document.querySelector('.desc__Footer').textContent = pl.desc.footer;
                 document.querySelector('.nav__Item--about .nav__ItemText').textContent = pl.nav.about;
-                document.querySelector('.nav__Item--works .nav__ItemText').textContent = pl.nav.works;
                 document.querySelector('.nav__Item--contact .nav__ItemText').textContent = pl.nav.contact;
         }
         return false;
