@@ -16,6 +16,10 @@ const langData =
                     },
                     "footer": "Zapraszam do współpracy!"
                 },
+                "contact": {
+                    "heading": "Kontakt",
+                    "socials": {},
+                },
             },
         "en":
             {
@@ -33,7 +37,11 @@ const langData =
                     },
                     "footer": "I'm looking forward to do business with you!"
                 },
-            }
+                "contact": {
+                    "heading": "Contact",
+                    "socials": {},
+                }
+            },
     };
 
 const pl =  langData.pl;
@@ -56,6 +64,7 @@ langItems.forEach( langItem => {
                 document.querySelector('.desc__Footer').textContent = pl.desc.footer;
                 document.querySelector('.nav__Item--about .nav__ItemText').textContent = pl.nav.about;
                 document.querySelector('.nav__Item--contact .nav__ItemText').textContent = pl.nav.contact;
+                document.querySelector('.contact__Heading').textContent = pl.contact.heading;
                 break;
             case 'en':
                 //content elements
@@ -66,14 +75,18 @@ langItems.forEach( langItem => {
                 document.querySelector('.desc__Footer').textContent = en.desc.footer;
                 document.querySelector('.nav__Item--about .nav__ItemText').textContent = en.nav.about;
                 document.querySelector('.nav__Item--contact .nav__ItemText').textContent = en.nav.contact;
+                document.querySelector('.contact__Heading').textContent = en.contact.heading;
                 break;
             default:
                 //content elements
                 document.querySelector('.desc__Heading').textContent = pl.desc.heading;
-                document.querySelector('.desc__Content').textContent = pl.desc.content;
+                document.querySelector('.desc__Content .desc__Paragraph--1').textContent = pl.desc.content.paragraph1;
+                document.querySelector('.desc__Content .desc__Paragraph--2').textContent = pl.desc.content.paragraph2;
+                document.querySelector('.desc__Content .desc__Paragraph--3').textContent = pl.desc.content.paragraph3;
                 document.querySelector('.desc__Footer').textContent = pl.desc.footer;
                 document.querySelector('.nav__Item--about .nav__ItemText').textContent = pl.nav.about;
                 document.querySelector('.nav__Item--contact .nav__ItemText').textContent = pl.nav.contact;
+                document.querySelector('.contact__Heading').textContent = pl.contact.heading;
         }
         return false;
     }, false);
