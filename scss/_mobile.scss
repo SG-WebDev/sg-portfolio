@@ -16,6 +16,14 @@
   letter-spacing: 1px;
   line-height: 1.75;
   margin-bottom: 50px;
+  &__Paragraph {
+    &:first-letter {
+      color: $lightGold;
+      font-size: 2em;
+      font-weight: 700;
+      line-height: 1;
+    }
+  }
 }
 
 .nav {

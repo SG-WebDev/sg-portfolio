@@ -73,14 +73,6 @@ body {
     font-size: 2.5rem;
     font-weight: 700;
   }
-  &__Paragraph {
-    &:first-letter {
-      color: $lightGold;
-      font-size: 2em;
-      font-weight: 700;
-      line-height: 1;
-    }
-  }
   &__Footer {
     font-weight: 700;
     padding: 5px 0;
