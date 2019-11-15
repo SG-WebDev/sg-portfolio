@@ -18,7 +18,6 @@ body {
 }
 
 .header {
-  padding: 25px 0;
   z-index: 1;
   &__Content {
     display: flex;
@@ -41,6 +40,7 @@ body {
   }
   &__Lang {
     display: flex;
+    font-size: 1.25rem;
   }
   &__LangItem {
     font-weight: 700;

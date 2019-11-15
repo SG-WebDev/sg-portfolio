@@ -9,6 +9,7 @@
   top: 0;
   left: 0;
   right: 0;
+  padding: 25px 50px;
   &__LogoText {
     font-size: 2rem;
     padding: 0 25px;
@@ -41,10 +42,32 @@
 }
 .desc {
   font-size: 1.5rem;
+  position: relative;
+  padding: 25px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 3px solid $gold;
+    border-left: 3px solid $gold;
+    height: 50px;
+    width: 50px;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-right: 3px solid $gold;
+    border-bottom: 3px solid $gold;
+    height: 50px;
+    width: 50px;
+  }
 }
 .nav {
-  padding: 25px 0;
-  justify-content: space-around;
+  padding: 25px 50px;
+  justify-content: space-between;
   &__Item {
     font-size: 4rem;
     transition: all 0.25s ease-in-out;
@@ -55,7 +78,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      border-bottom: 5px solid $gold;
+      border-bottom: 3px solid $gold;
       height: 100%;
       width: 100%;
       transform: scaleX(0.25);
@@ -68,7 +91,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      border-left: 5px solid $gold;
+      border-left: 3px solid $gold;
       height: 100%;
       width: 100%;
       transform: scaleY(0.5);
@@ -106,7 +129,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      border-top: 5px solid $gold;
+      border-top: 3px solid $gold;
       height: 100%;
       width: 100%;
       transform: scaleX(0.25);
@@ -119,7 +142,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      border-right: 5px solid $gold;
+      border-right: 3px solid $gold;
       height: 100%;
       width: 100%;
       transform: scaleY(0.5);
