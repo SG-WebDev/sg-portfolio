@@ -4,8 +4,8 @@
   "description": "Site presenting my projects and myself.",
   "main": "-",
   "scripts": {
-    "scss:mobile": "node-sass ./scss/_mobile.scss --source-map-root -o -r ./css/mobile.css --source-map-embed --output-style compressed",
-    "scss:desktop": "node-sass ./scss/_desktop.scss --source-map-root -o -r ./css/desktop.css --source-map-embed --output-style compressed",
+    "scss:mobile": "node-sass ./scss/_mobile.scss --source-map true -o -r ./css/mobile.css --output-style compressed",
+    "scss:desktop": "node-sass ./scss/_desktop.scss --source-map true -o -r ./css/desktop.css --output-style compressed",
     "dev": "npm-run-all -p scss:*",
     "watch": "watch \"npm run dev\" ./scss"
   },
