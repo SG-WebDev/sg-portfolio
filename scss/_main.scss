@@ -46,7 +46,7 @@ body {
     font-weight: 700;
     padding: 0 5px;
     &:hover {
-      color: $lightGold;
+      color: $gold;
       cursor: pointer;
     }
     &--active {
@@ -104,12 +104,12 @@ body {
         color: $white;
       }
       .contact__ItemDesc {
-        color: $lightGold;
+        color: $gold;
       }
     }
   }
   &__Icon {
-    color: $lightGold;
+    color: $gold;
     font-size: 3em;
     transition: color 0.25s ease-in-out;
   }

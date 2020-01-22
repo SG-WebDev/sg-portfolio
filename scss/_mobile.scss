@@ -19,7 +19,7 @@
   text-align: center;
   &__Paragraph {
     &:first-letter {
-      color: $lightGold;
+      color: $gold;
       font-size: 2em;
       font-weight: 700;
       line-height: 1;
@@ -64,12 +64,12 @@
     }
     &--active {
       background-color: $darkGray;
-      color: $lightGold;
+      color: $gold;
     }
     &:focus {
       outline: 0;
       background-color: $darkGray;
-      color: $lightGold;
+      color: $gold;
     }
   }
   &__ItemText {
