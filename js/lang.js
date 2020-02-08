@@ -54,40 +54,26 @@ langItems.forEach( langItem => {
             elem.classList.remove('header__LangItem--active');
         });
         this.classList.add('header__LangItem--active');
+        let choosenLang;
         switch (lang) {
             case 'pl':
-                //content elements
-                document.querySelector('.desc__Heading').textContent = pl.desc.heading;
-                document.querySelector('.desc__Content .desc__Paragraph--1').textContent = pl.desc.content.paragraph1;
-                document.querySelector('.desc__Content .desc__Paragraph--2').textContent = pl.desc.content.paragraph2;
-                document.querySelector('.desc__Content .desc__Paragraph--3').textContent = pl.desc.content.paragraph3;
-                document.querySelector('.desc__Footer').textContent = pl.desc.footer;
-                document.querySelector('.nav__Item--about .nav__ItemText').textContent = pl.nav.about;
-                document.querySelector('.nav__Item--contact .nav__ItemText').textContent = pl.nav.contact;
-                document.querySelector('.contact__Heading').textContent = pl.contact.heading;
+                choosenLang = pl;
                 break;
             case 'en':
-                //content elements
-                document.querySelector('.desc__Heading').textContent = en.desc.heading;
-                document.querySelector('.desc__Content .desc__Paragraph--1').textContent = en.desc.content.paragraph1;
-                document.querySelector('.desc__Content .desc__Paragraph--2').textContent = en.desc.content.paragraph2;
-                document.querySelector('.desc__Content .desc__Paragraph--3').textContent = en.desc.content.paragraph3;
-                document.querySelector('.desc__Footer').textContent = en.desc.footer;
-                document.querySelector('.nav__Item--about .nav__ItemText').textContent = en.nav.about;
-                document.querySelector('.nav__Item--contact .nav__ItemText').textContent = en.nav.contact;
-                document.querySelector('.contact__Heading').textContent = en.contact.heading;
+                choosenLang = en;
                 break;
-            default:
-                //content elements
-                document.querySelector('.desc__Heading').textContent = pl.desc.heading;
-                document.querySelector('.desc__Content .desc__Paragraph--1').textContent = pl.desc.content.paragraph1;
-                document.querySelector('.desc__Content .desc__Paragraph--2').textContent = pl.desc.content.paragraph2;
-                document.querySelector('.desc__Content .desc__Paragraph--3').textContent = pl.desc.content.paragraph3;
-                document.querySelector('.desc__Footer').textContent = pl.desc.footer;
-                document.querySelector('.nav__Item--about .nav__ItemText').textContent = pl.nav.about;
-                document.querySelector('.nav__Item--contact .nav__ItemText').textContent = pl.nav.contact;
-                document.querySelector('.contact__Heading').textContent = pl.contact.heading;
         }
+        const contentElements = document.querySelectorAll('[data-content]')
+        contentElements.forEach( contentElement => {
+            const itemContent = contentElement.getAttribute('data-content');
+            let objectPath = itemContent.split(".");
+            if (objectPath[2]) {
+                contentElement.textContent = choosenLang[objectPath[0]][objectPath[1]][objectPath[2]]
+            }
+            else {
+                contentElement.textContent = choosenLang[objectPath[0]][objectPath[1]]
+            }
+        });
         return false;
     }, false);
 });
